@@ -97,4 +97,11 @@ public class MainActivity extends Activity {
 
         productAdapter.updateProducts(newProduct);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        super.stopDb();
+    }
 }

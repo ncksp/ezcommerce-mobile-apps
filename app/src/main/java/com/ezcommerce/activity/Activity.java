@@ -39,4 +39,8 @@ public class Activity extends AppCompatActivity {
     public Database getDb() {
         return db;
     }
+
+    public void stopDb(){
+        db.close();
+    }
 }
